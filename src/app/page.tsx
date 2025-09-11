@@ -1,103 +1,125 @@
-import Image from "next/image";
+'use client'; // Necesario para usar useState
 
-export default function Home() {
+import Image from 'next/image';
+
+import { useState, useEffect } from 'react';
+import ContributionGraph from '@/components/ContributionGraph';
+
+import contributionsData from '@/data/bitbucket-stats.json';
+import TypingAnimation from '@/components/TypingAnimation';
+import styles from './HomePage.module.css';
+
+// Esta es tu función "wrapper" para obtener los datos
+/*async function getBitbucketContributions() {
+  try {
+    // Reemplaza esta URL con la URL real de tu función serverless
+    const res = await fetch('https://bitbucket-stats.vercel.app/api/bitbucket_stats', {
+      // Forzamos a que no use caché para obtener siempre datos frescos
+      cache: 'no-store' 
+    });
+
+    if (!res.ok) {
+      throw new Error('Falló la obtención de datos');
+    }
+    
+    return res.json();
+
+  } catch (error) {
+    console.error('Error fetching contributions:', error);
+    // Devolvemos un arreglo vacío en caso de error para que la página no se rompa
+    return [];
+  }
+}*/
+
+// La página ahora es un componente asíncrono
+export default function HomePage() {
+
+  // 1. Llamamos a la función para obtener los datos en el servidor
+  const [contributions, setContributions] = useState(contributionsData)
+  const [viewMode, setViewMode] = useState<'normal' | 'fullscreen'>('normal');
+
+  /*useEffect(() => {
+    getBitbucketContributions().then(data => setContributions(data));
+  }, []);*/
+
+  // 2. Le pasamos los datos al componente a través de props
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main>
+      <section className={styles.heroSection}>
+        <div className={styles.heroContainer}>
+          <div className={styles.leftPanel}>
+            <div className={styles.photoContainer}>
+              <div className={styles.terminalHeader}>[USER_INFO]</div>
+              <Image
+                src="/my-profile.png" // Asegúrate de que esta ruta sea correcta
+                alt="Perfil de Edgar Macias"
+                width={250}
+                height={250}
+                className={styles.profileImageHacker}
+                priority
+              />
+              <div className={styles.userStatus}>
+                <span className={styles.statusIndicator}></span>
+                STATUS: <span className={styles.statusText}>SECURE_SESSION</span>
+              </div>
+            </div>
+          </div>
+          <div className={styles.rightPanel}>
+            <div className={styles.terminalWindow}>
+              <div className={styles.terminalHeader}>[ROOT_ACCESS] - SESSION_ID: 8A4B2C</div>
+              <div className={styles.terminalBody}>
+                <div className={`${styles.terminalLine} ${styles.title}`}>
+                  <span className={styles.prompt}>&gt; </span>
+                  <TypingAnimation text="Hola, soy Edgar Macias" speed={80} delay={1000} />
+                </div>
+                <div className={`${styles.terminalLine} ${styles.subtitle}`}>
+                  <span className={styles.prompt}>&gt; </span>
+                  <TypingAnimation text="Software Security Engineer" speed={70} delay={3500} />
+                </div>
+                <div className={`${styles.terminalLine} ${styles.description}`}>
+                  <span className={styles.prompt}>&gt; </span>
+                  <TypingAnimation
+                    text="Fortifico sistemas y construyo defensas digitales. Bienvenido a mi terminal."
+                    speed={30}
+                    delay={6000}
+                  />
+                </div>
+                <div className={`${styles.terminalLine} ${styles.socialLinks}`}>
+                  <span className={styles.prompt}>&gt; </span>
+                  <a href="#">[GitHub]</a>
+                  <a href="#">[LinkedIn]</a>
+                  <a href="#">[Secure_Contact]</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+      </section>
+
+      <section className={styles.contributionsSection}>
+        <h2 className={styles.sectionTitle}>[SYSTEM_LOGS]: Actividad de Desarrollo</h2>
+        <p className={styles.sectionDescription}>
+          Análisis de commits y contribuciones. La actividad constante es clave para la detección proactiva de vulnerabilidades en el ciclo de vida del desarrollo.
+        </p>
+        
+        <button onClick={() => setViewMode('fullscreen')} className={styles.exploreButton}>
+          &gt; ejecutar visualización_animada
+        </button>
+
+        <ContributionGraph
+          contributions={contributions}
+          viewMode="normal"
+          onClose={() => {}}
+        />
+        
+        {viewMode === 'fullscreen' && (
+          <ContributionGraph
+            contributions={contributions}
+            viewMode="fullscreen"
+            onClose={() => setViewMode('normal')}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        )}
+      </section>
+    </main>
   );
 }

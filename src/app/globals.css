@@ -1,26 +1,25 @@
-@import "tailwindcss";
+/* 1. Importar una fuente monoespaciada */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
 
+/* 2. Definir variables de color para el tema */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0a0a; /* Negro casi puro */
+  --terminal-bg: #0d1117;
+  --text-primary: #e6e6e6;
+  --text-secondary: #8b949e;
+  --accent-green: #39ff14; /* Verde neón */
+  --border-color: rgba(57, 255, 20, 0.2);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Fira Code', monospace; /* Aplicar la fuente a todo el cuerpo */
 }
+
+.container {
+  max-width: 1200px; /* Un poco más de espacio */
+  margin: 0 auto;
+  padding: 20px;
+}
+

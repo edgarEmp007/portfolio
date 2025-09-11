@@ -1,0 +1,117 @@
+/* portfolio/components/ContributionGraph.module.css */
+
+.graphWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.toggleButton {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #373e47;
+  color: #c9d1d9;
+  border: 1px solid #444c56;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1020; /* Debe estar por encima del contenido fullscreen */
+  transition: background-color 0.2s;
+}
+
+.toggleButton:hover {
+  background-color: #444c56;
+}
+
+.graphContainer {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.graph {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15px, 1fr));
+  gap: 4px;
+}
+
+.cell {
+  position: relative; /* Contexto para el tooltip */
+  width: 15px; /* Tamaño pequeño para la vista normal */
+  height: 15px;
+  background-color: #2d333b;
+  border-radius: 3px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.cell:hover {
+  transform: scale(1.2);
+  z-index: 100; 
+}
+
+.gif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 125%; /* Posiciona el tooltip arriba de la celda */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1f2328;
+  color: #c9d1d9;
+  padding: 8px 12px;
+  border-radius: 6px;
+  white-space: nowrap; /* Evita que el texto se parta en varias líneas */
+  z-index: 10;
+  
+  /* Oculto por defecto */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  pointer-events: none;
+}
+
+.cell:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  
+}
+
+/* --- ESTILOS FULLSCREEN --- */
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(13, 17, 23, 0.95);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.fullscreen .graphContainer {
+  overflow-x: auto;
+}
+.fullscreen .graph {
+  /* Anulamos la regla que hace que la cuadrícula se ajuste al contenedor */
+  grid-template-columns: none;
+
+  /* Reintroducimos las reglas originales para el flujo horizontal */
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.fullscreen .cell {
+  width: 90px; /* Celdas mucho más grandes para ver los GIFs */
+  height: 90px;
+  border-radius: 5px;
+}

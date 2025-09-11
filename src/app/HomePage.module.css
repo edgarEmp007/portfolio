@@ -1,0 +1,191 @@
+/* portfolio/app/HomePage.module.css */
+
+.heroSection {
+  min-height: 80vh;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px; /* Asegura un ancho máximo */
+}
+
+.leftPanel {
+  flex-basis: 350px;
+  flex-shrink: 0;
+}
+
+.rightPanel {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.photoContainer {
+  border: 1px solid rgba(57, 255, 20, 0.2);
+  padding: 15px;
+  background-color: rgba(57, 255, 20, 0.03);
+  position: relative;
+}
+
+.profileImageHacker {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  opacity: 0.9;
+}
+
+.photoContainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.userStatus {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  font-size: 0.9rem;
+  color: #39ff14;
+  text-transform: uppercase;
+}
+
+.statusIndicator {
+  width: 10px;
+  height: 10px;
+  background-color: #39ff14;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #39ff14;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.terminalWindow {
+  border: 1px solid rgba(57, 255, 20, 0.2);
+  background-color: #0d1117;
+  height: 100%;
+}
+
+.terminalHeader {
+  background-color: rgba(57, 255, 20, 0.1);
+  padding: 8px 12px;
+  font-size: 0.8rem;
+  color: #8b949e;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(57, 255, 20, 0.2);
+}
+
+.terminalBody {
+  padding: 20px;
+  font-size: 1.1rem;
+}
+
+.terminalLine {
+  margin-bottom: 15px;
+  min-height: 24px;
+}
+
+.prompt {
+  color: #39ff14;
+  margin-right: 10px;
+}
+
+.title .typing-animation-text {
+  font-size: 2.5rem;
+  color: #e6e6e6;
+  font-weight: 700;
+}
+
+.subtitle .typing-animation-text {
+  font-size: 1.5rem;
+  color: #39ff14;
+}
+
+.description .typing-animation-text {
+  color: #8b949e;
+}
+
+.socialLinks a {
+  color: #e6e6e6;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.2s;
+}
+
+.socialLinks a:hover {
+  color: #39ff14;
+  background-color: rgba(57, 255, 20, 0.1);
+}
+
+.contributionsSection {
+  background-color: var(--terminal-bg); /* Mismo fondo que la terminal */
+  border: 1px solid var(--border-color); /* Mismo borde */
+  border-radius: 0; /* Sin bordes redondeados, más industrial */
+  padding: 30px;
+  margin: 60px auto 40px auto; /* Centrado y con margen superior/inferior */
+  max-width: 1200px; /* ¡CLAVE! Mismo ancho máximo que el hero-container */
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: var(--accent-green); /* Verde neón para el título */
+  margin-bottom: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sectionDescription {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto 40px auto; /* Centrado y con margen inferior */
+  line-height: 1.7;
+}
+
+.exploreButton {
+  background-color: transparent;
+  border: 1px solid var(--accent-green);
+  color: var(--accent-green);
+  padding: 12px 25px;
+  font-family: 'Fira Code', monospace; /* Misma fuente que la terminal */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+  margin-bottom: 40px;
+  text-transform: lowercase;
+}
+
+.exploreButton:hover {
+  background-color: rgba(57, 255, 20, 0.1);
+  color: var(--text-primary);
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.5); /* Efecto de brillo */
+}
+
+@media (max-width: 900px) {
+  .heroContainer {
+    flex-direction: column;
+  }
+  .leftPanel {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
