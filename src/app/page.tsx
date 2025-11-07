@@ -6,13 +6,11 @@ import { useState, useEffect } from 'react';
 import ContributionGraph from '@/components/ContributionGraph';
 
 import contributionsData from '@/data/bitbucket-stats.json';
-import TypingAnimation from '@/components/TypingAnimation';
 import styles from './HomePage.module.css';
 import { useTranslation } from '@/i18n/useTranslation';
 import CaseStudies from '@/components/CaseStudies';
 import Arsenal from '@/components/Arsenal';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
-import ContactForm from '@/components/ContactForm'; // Add this import
 import dynamic from 'next/dynamic';
 
 const DynamicTypingAnimation = dynamic(
@@ -129,20 +127,20 @@ export default function HomePage() {
                   <div className={`${styles.terminalLine} ${styles.socialLinks}`}>
                     <span className={styles.prompt}>&gt; </span>
                     <a
-                      href="https://github.com/USERNAME"
+                      href="https://github.com/DevCybSec"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       {t.hero.github}
                     </a>
                     <a
-                      href="https://linkedin.com/in/USERNAME"
+                      href="https://linkedin.com/in/edgar-macias-devcybsec"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       {t.hero.linkedin}
                     </a>
-                    <a href="mailto:contact@example.com">{t.hero.contact}</a>
+                    <a href="mailto:edgarmacias@devcybsec.com">{t.hero.contact}</a>
                   </div>
                 </div>
               </div>
@@ -196,11 +194,6 @@ export default function HomePage() {
               onClose={() => setViewMode('normal')}
             />
           )}
-        </section>
-
-        {/* --- NEW: Contact Form Section --- */}
-        <section className={styles.contributionsSection}>
-          <ContactForm />
         </section>
 
         {/* --- NEW: CTA Section --- */}
