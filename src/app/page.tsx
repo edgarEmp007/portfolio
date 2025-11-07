@@ -13,6 +13,12 @@ import CaseStudies from '@/components/CaseStudies';
 import Arsenal from '@/components/Arsenal';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import ContactForm from '@/components/ContactForm'; // Add this import
+import dynamic from 'next/dynamic';
+
+const DynamicTypingAnimation = dynamic(
+  () => import('@/components/TypingAnimation'),
+  { ssr: false },
+);
 
 // Esta es tu función "wrapper" para obtener los datos
 /*async function getBitbucketContributions() {
@@ -49,7 +55,7 @@ export default function HomePage() {
   }, []);*/
 
   // 2. Le pasamos los datos al componente a través de props
-  return (
+ return (
     <>
       <header className={styles.mainHeader}>
         <LanguageSwitcher />
@@ -86,11 +92,17 @@ export default function HomePage() {
                 <div className={styles.terminalBody}>
                   <div className={`${styles.terminalLine} ${styles.title}`}>
                     <span className={styles.prompt}>&gt; </span>
-                    <TypingAnimation text={t.hero.title} speed={80} delay={1000} />
+                    {/* 4. Use the new dynamic component */}
+                    <DynamicTypingAnimation
+                      text={t.hero.title}
+                      speed={80}
+                      delay={1000}
+                    />
                   </div>
                   <div className={`${styles.terminalLine} ${styles.subtitle}`}>
                     <span className={styles.prompt}>&gt; </span>
-                    <TypingAnimation
+                    {/* 4. Use the new dynamic component */}
+                    <DynamicTypingAnimation
                       text={t.hero.subtitle}
                       speed={70}
                       delay={3500}
@@ -98,7 +110,8 @@ export default function HomePage() {
                   </div>
                   <div className={`${styles.terminalLine} ${styles.description}`}>
                     <span className={styles.prompt}>&gt; </span>
-                    <TypingAnimation
+                    {/* 4. Use the new dynamic component */}
+                    <DynamicTypingAnimation
                       text={t.hero.description1}
                       speed={30}
                       delay={6000}
@@ -106,7 +119,8 @@ export default function HomePage() {
                   </div>
                   <div className={`${styles.terminalLine} ${styles.description}`}>
                     <span className={styles.prompt}>&gt; </span>
-                    <TypingAnimation
+                    {/* 4. Use the new dynamic component */}
+                    <DynamicTypingAnimation
                       text={t.hero.description2}
                       speed={30}
                       delay={8000}
@@ -115,19 +129,20 @@ export default function HomePage() {
                   <div className={`${styles.terminalLine} ${styles.socialLinks}`}>
                     <span className={styles.prompt}>&gt; </span>
                     <a
-                      href="https://github.com/DevCybSec"
+                      href="https://github.com/USERNAME"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       {t.hero.github}
                     </a>
                     <a
-                      href="https://linkedin.com/in/edgar-macias-devcybsec"
+                      href="https://linkedin.com/in/USERNAME"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       {t.hero.linkedin}
                     </a>
+                    <a href="mailto:contact@example.com">{t.hero.contact}</a>
                   </div>
                 </div>
               </div>
@@ -182,10 +197,12 @@ export default function HomePage() {
             />
           )}
         </section>
+
         {/* --- NEW: Contact Form Section --- */}
-      <section className={styles.contributionsSection}>
-        <ContactForm />
-      </section>  
+        <section className={styles.contributionsSection}>
+          <ContactForm />
+        </section>
+
         {/* --- NEW: CTA Section --- */}
         <section className={styles.contributionsSection}>
           <h2 className={styles.sectionTitle}>{t.cta.title}</h2>

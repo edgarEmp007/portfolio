@@ -14,6 +14,7 @@ const ContactForm = () => {
     name: '',
     email: '',
     message: '',
+    locale: t.lang
   });
   const [status, setStatus] = useState<SubmissionStatus>('idle');
 
@@ -31,7 +32,6 @@ const ContactForm = () => {
     e.preventDefault();
     setStatus('sending');
 
-    // Get the API URL from the environment variable
     const apiEndpoint = process.env.NEXT_PUBLIC_EMAIL_API_URL;
 
     if (!apiEndpoint) {
@@ -51,9 +51,9 @@ const ContactForm = () => {
 
       if (response.ok) {
         setStatus('success');
-        setFormData({ name: '', email: '', message: '' }); // Clear form
+        setFormData({ name: '', email: '', message: '', locale: t.lang }); // Clear form
       } else {
-        throw new Error('API request failed');
+        throw new Error(`API request failed: ${response.statusText}`);
       }
     } catch (error) {
       console.error('Failed to send email:', error);
@@ -111,7 +111,6 @@ const ContactForm = () => {
             className={styles.textarea}
           />
         </div>
-        <input type='hidden' name="locale" id="locale" value={t.lang}/>
 
         <div className={styles.buttonContainer}>
           <button
