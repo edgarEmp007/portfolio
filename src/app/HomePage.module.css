@@ -1,5 +1,14 @@
 /* portfolio/app/HomePage.module.css */
 
+/* NEW STYLE FOR LANGUAGE SWITCHER HEADER */
+.mainHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  max-width: 1200px; /* Aligns with container */
+  margin: 0 auto;
+}
+
 .heroSection {
   min-height: 80vh;
   padding: 40px 0;
@@ -71,9 +80,15 @@
 }
 
 @keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.5; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .terminalWindow {
@@ -170,6 +185,8 @@
   transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
   margin-bottom: 40px;
   text-transform: lowercase;
+  text-decoration: none; /* Added for the <a> tag */
+  display: inline-block; /* Added for the <a> tag */
 }
 
 .exploreButton:hover {

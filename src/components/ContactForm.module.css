@@ -1,0 +1,73 @@
+/* src/components/ContactForm.module.css */
+
+.formContainer {
+  width: 100%;
+  max-width: 700px; /* Constrain width for readability */
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.input,
+.textarea {
+  background-color: #0a0a0a; /* Darker bg */
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 12px;
+  font-family: 'Fira Code', monospace;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--accent-green);
+  box-shadow: 0 0 8px rgba(57, 255, 20, 0.3);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.buttonContainer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Inherit button styles from homeStyles, but add disabled state */
+.buttonContainer button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: rgba(57, 255, 20, 0.05);
+}
+
+.statusMessageSuccess {
+  margin-top: 20px;
+  color: var(--accent-green);
+  text-align: center;
+}
+
+.statusMessageError {
+  margin-top: 20px;
+  color: #ff4d4d; /* A terminal-appropriate error red */
+  text-align: center;
+}

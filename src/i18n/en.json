@@ -1,0 +1,82 @@
+{
+  "lang": "en",
+  "hero": {
+    "title": "Hi, I'm Edgar Macias",
+    "subtitle": "Software Security Engineer",
+    "description1": "I fortify systems and build digital defenses. Welcome to my terminal.",
+    "description2": "Languages: Spanish (Native), English (Proficient)",
+    "github": "[GitHub]",
+    "linkedin": "[LinkedIn]",
+    "contact": "[Secure_Contact]"
+  },
+  "terminalHeaders": {
+    "userInfo": "[AGENT_DOSSIER: E.MACIAS]",
+    "rootAccess": "[SECURE_SHELL] - SESSION_ID: 8A4B2C"
+  },
+  "missionBriefing": {
+    "title": "[MISSION_BRIEFING]: De-Risking the Digital Frontier",
+    "body": "I spent 7+ years building and scaling complex applications for one of Mexico's largest universities. I saw firsthand how a single vulnerability, left unchecked, can compromise an entire system. My journey into cybersecurity wasn't a career change; it was a specialization. I don't just find vulnerabilities—I understand how they were built in the first place. My experience as both a developer (Dev) and a security professional (Sec) is the foundation of DevCybSec."
+  },
+  "caseStudies": {
+    "title": "[CASE_FILES]: Field Experience",
+    "projects": [
+      {
+        "name": "UNAM Academic Platforms (siglear.aragon.unam.mx, etc.)",
+        "role": "Role: Software Engineer",
+        "challenge": "Challenge: Scale and maintain high-traffic platforms for thousands of students.",
+        "securityPosture": "Security Posture: Responsible for protecting sensitive student data (PII), implementing secure authentication, and performing continuous code reviews to mitigate web vulnerabilities (XSS, SQLi) while developing new features."
+      },
+      {
+        "name": "Freelance Taxi Application (Flutter / NestJS)",
+        "role": "Role: Full-Stack Architect",
+        "challenge": "Challenge: Build a real-time ride-hailing app from scratch.",
+        "securityPosture": "Security Posture: Architected a secure backend (NestJS) and mobile app (Flutter). Implemented robust user authentication, encrypted real-time GPS data, and secured API endpoints against unauthorized access, protecting both passenger and driver data."
+      }
+    ]
+  },
+  "arsenal": {
+    "title": "[TRAINING_LOGS]: Certified Arsenal",
+    "items": [
+      {
+        "name": "Jr. Penetration Tester",
+        "description": "TryHackMe path.",
+        "url":"https://tryhackme.com/certificate/THM-45KJGTZY7G"
+      },
+      {
+        "name": "Web Hacking",
+        "description": "TryHackMe path.",
+        "url": "https://tryhackme.com/certificate/THM-W6GXYC3XGO"
+      },
+      {
+        "name": "DevSecOps",
+        "description": "TryHackMe path.",
+        "url": "https://tryhackme.com/certificate/THM-TGC3JH9VFX"
+      }
+    ]
+  },
+  "contributions": {
+    "title": "[SYSTEM_LOGS]: Development Activity",
+    "description": "Commit and contribution analysis. Constant activity is key to proactive vulnerability detection in the development lifecycle.",
+    "button": "> execute animated_visualization"
+  },
+  "graphTooltip": {
+    "noCount": "No contributions on",
+    "withCount": "contributions on"
+  },
+  "cta": {
+    "title": "[ENGAGE_SERVICES]: DevCybSec",
+    "body": "EdgarMacias.com is my personal dossier. DevCybSec.com is my professional practice.",
+    "button": "> Go to DevCybSec.com"
+  },
+  "contactForm": {
+    "title": "[SECURE_TRANSMISSION]",
+    "description": "Send a secure message. All fields are required.",
+    "nameLabel": "Your Name / Alias:",
+    "emailLabel": "Your Email:",
+    "messageLabel": "Your Message:",
+    "sendButton": "> Transmit_Message",
+    "sendingText": "Sending...",
+    "successMessage": "Transmission Confirmed. Awaiting response.",
+    "errorMessage": "Transmission Failed. Please check inputs and try again."
+  }
+}

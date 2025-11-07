@@ -1,0 +1,25 @@
+/* src/components/CaseStudies.module.css */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* On medium screens and up, show two columns */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.line {
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.prompt {
+  color: var(--text-secondary);
+}
