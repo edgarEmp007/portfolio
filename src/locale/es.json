@@ -1,0 +1,87 @@
+{
+    "Hero": {
+        "title": "Edgar Macías",
+        "role": "Software Engineer Senior | Full-Stack Developer",
+        "specialty": "Especialista en Desarrollo Seguro (AppSec) y Escalabilidad",
+        "description": "7+ años de experiencia construyendo y optimizando sistemas de alto impacto (UNAM), aplicando un enfoque 'Security by Design' para mitigar riesgos en el ciclo de desarrollo.",
+        "ctaCode": "Ver Portafolio de Código",
+        "ctaCV": "Descargar CV"
+    },
+    "Experience": {
+        "title": "Experiencia de Impacto",
+        "role": "Senior Software Engineer / Tech Lead",
+        "company": "UNAM (Universidad Nacional Autónoma de México)",
+        "period": "2018 - Presente",
+        "description": "Liderazgo técnico en el desarrollo de plataformas críticas para la gestión universitaria, impactando a miles de usuarios.",
+        "achievements": {
+            "users": "Desarrollo de sistemas escalables gestionando datos de más de 300,000 alumnos.",
+            "migration": "Migración exitosa de bases de datos legacy con millones de registros, asegurando integridad y cero tiempo de inactividad.",
+            "security": "Implementación de prácticas de AppSec y 'Security by Design' reduciendo vulnerabilidades en un 40%.",
+            "optimization": "Optimización de procesos administrativos, reduciendo tiempos de respuesta en un 60%."
+        }
+    },
+    "Journey": {
+        "title": "Mi Trayectoria: The Journey",
+        "milestones": [
+            {
+                "year": "2015",
+                "title": "Ingeniería en Computación",
+                "description": "Inicio de formación académica en la UNAM, Facultad de Ingeniería."
+            },
+            {
+                "year": "2018",
+                "title": "Full-Stack Developer @ UNAM",
+                "description": "Desarrollo de sistemas críticos y migración de tecnologías legacy."
+            },
+            {
+                "year": "2021",
+                "title": "Especialización en AppSec",
+                "description": "Foco profundo en Ciberseguridad, certificaciones y desarrollo seguro."
+            },
+            {
+                "year": "2024",
+                "title": "Lanzamiento de DevCybSec",
+                "description": "Plataforma educativa para desarrolladores enfocada en seguridad."
+            }
+        ]
+    },
+    "Skills": {
+        "title": "Habilidades (T-Shaped Profile)",
+        "engineeringTitle": "Core Engineering",
+        "appsecTitle": "AppSec & Security"
+    },
+    "Projects": {
+        "title": "Liderazgo e Investigación en Seguridad",
+        "devcybsec": {
+            "role": "Fundador & Lead Developer",
+            "title": "DevCybSec - Laboratorios de Seguridad",
+            "description": "Plataforma educativa con laboratorios interactivos para enseñar vulnerabilidades web (OWASP Top 10) y prácticas de codificación segura. Demuestra conocimiento profundo en simulaciones de ataques y defensas.",
+            "cta": "Ver Proyecto"
+        },
+        "minisast": {
+            "role": "Investigación",
+            "title": "Mini-SAST Analyzer",
+            "description": "Prueba de concepto de un analizador estático de seguridad (SAST) capaz de detectar patrones de vulnerabilidades comunes en código fuente Python y JavaScript.",
+            "cta": "Ver Proyecto"
+        }
+    },
+    "Contact": {
+        "title": "¿Listo para construir software seguro y escalable?",
+        "subtitle": "Abierto a nuevas oportunidades donde pueda aportar valor técnico y estratégico.",
+        "ctaEmail": "Email Me",
+        "ctaLinkedIn": "LinkedIn",
+        "ctaGitHub": "GitHub",
+        "footer": "© {year} Edgar Macías. Construido con Next.js, Tailwind CSS & principios AppSec."
+    },
+    "ContactForm": {
+        "title": "[TRANSMISIÓN_SEGURA]",
+        "description": "Enviar un mensaje seguro. Todos los campos son requeridos.",
+        "nameLabel": "Tu Nombre / Alias:",
+        "emailLabel": "Tu Email:",
+        "messageLabel": "Tu Mensaje:",
+        "sendButton": "> Transmitir_Mensaje",
+        "sendingText": "Enviando...",
+        "successMessage": "Transmisión Confirmada. Esperando respuesta.",
+        "errorMessage": "Transmisión Fallida. Revisa los campos e intenta de nuevo."
+    }
+}

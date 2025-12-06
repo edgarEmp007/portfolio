@@ -1,20 +1,21 @@
-// src/components/ContactForm.tsx
 'use client';
 
 import { useState, FormEvent } from 'react';
-import { useTranslation } from '@/i18n/useTranslation';
+import { useTranslations, useLocale } from 'next-intl';
 import styles from './ContactForm.module.css';
 import homeStyles from '@/app/HomePage.module.css'; // Re-use button style
 
 type SubmissionStatus = 'idle' | 'sending' | 'success' | 'error';
 
 const ContactForm = () => {
-  const t = useTranslation();
+  const t = useTranslations('ContactForm');
+  const locale = useLocale();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
-    locale: t.lang
+    locale: locale
   });
   const [status, setStatus] = useState<SubmissionStatus>('idle');
 
@@ -51,7 +52,7 @@ const ContactForm = () => {
 
       if (response.ok) {
         setStatus('success');
-        setFormData({ name: '', email: '', message: '', locale: t.lang }); // Clear form
+        setFormData({ name: '', email: '', message: '', locale: locale }); // Clear form
       } else {
         throw new Error(`API request failed: ${response.statusText}`);
       }
@@ -63,15 +64,15 @@ const ContactForm = () => {
 
   return (
     <div className={styles.formContainer}>
-      <h2 className={homeStyles.sectionTitle}>{t.contactForm.title}</h2>
+      <h2 className={homeStyles.sectionTitle}>{t('title')}</h2>
       <p className={homeStyles.sectionDescription}>
-        {t.contactForm.description}
+        {t('description')}
       </p>
 
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.formGroup}>
           <label htmlFor="name" className={styles.label}>
-            {t.contactForm.nameLabel}
+            {t('nameLabel')}
           </label>
           <input
             type="text"
@@ -85,7 +86,7 @@ const ContactForm = () => {
         </div>
         <div className={styles.formGroup}>
           <label htmlFor="email" className={styles.label}>
-            {t.contactForm.emailLabel}
+            {t('emailLabel')}
           </label>
           <input
             type="email"
@@ -99,7 +100,7 @@ const ContactForm = () => {
         </div>
         <div className={styles.formGroup}>
           <label htmlFor="message" className={styles.label}>
-            {t.contactForm.messageLabel}
+            {t('messageLabel')}
           </label>
           <textarea
             id="message"
@@ -119,8 +120,8 @@ const ContactForm = () => {
             disabled={status === 'sending'}
           >
             {status === 'sending'
-              ? t.contactForm.sendingText
-              : t.contactForm.sendButton}
+              ? t('sendingText')
+              : t('sendButton')}
           </button>
         </div>
       </form>
@@ -128,12 +129,12 @@ const ContactForm = () => {
       {/* Submission Status Messages */}
       {status === 'success' && (
         <p className={styles.statusMessageSuccess}>
-          {t.contactForm.successMessage}
+          {t('successMessage')}
         </p>
       )}
       {status === 'error' && (
         <p className={styles.statusMessageError}>
-          {t.contactForm.errorMessage}
+          {t('errorMessage')}
         </p>
       )}
     </div>

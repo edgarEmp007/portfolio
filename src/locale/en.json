@@ -1,0 +1,87 @@
+{
+    "Hero": {
+        "title": "Edgar Macías",
+        "role": "Senior Software Engineer | Full-Stack Developer",
+        "specialty": "Specialist in Secure Development (AppSec) and Scalability",
+        "description": "7+ years of experience building and optimizing high-impact systems (UNAM), applying a 'Security by Design' approach to mitigate risks in the development lifecycle.",
+        "ctaCode": "View Code Portfolio",
+        "ctaCV": "Download CV"
+    },
+    "Experience": {
+        "title": "Impactful Experience",
+        "role": "Senior Software Engineer / Tech Lead",
+        "company": "UNAM (National Autonomous University of Mexico)",
+        "period": "2018 - Present",
+        "description": "Technical leadership in the development of critical platforms for university management, impacting thousands of users.",
+        "achievements": {
+            "users": "Development of scalable systems managing data for over 300,000 students.",
+            "migration": "Successful migration of legacy databases with millions of records, ensuring integrity and zero downtime.",
+            "security": "Implementation of AppSec and 'Security by Design' practices reducing vulnerabilities by 40%.",
+            "optimization": "Optimization of administrative processes, reducing response times by 60%."
+        }
+    },
+    "Journey": {
+        "title": "My Journey",
+        "milestones": [
+            {
+                "year": "2015",
+                "title": "Computer Engineering",
+                "description": "Started academic training at UNAM, Faculty of Engineering."
+            },
+            {
+                "year": "2018",
+                "title": "Full-Stack Developer @ UNAM",
+                "description": "Development of critical systems and migration of legacy technologies."
+            },
+            {
+                "year": "2021",
+                "title": "AppSec Specialization",
+                "description": "Deep focus on Cybersecurity, certifications, and secure development."
+            },
+            {
+                "year": "2024",
+                "title": "DevCybSec Launch",
+                "description": "Educational platform for developers focused on security."
+            }
+        ]
+    },
+    "Skills": {
+        "title": "Skills (T-Shaped Profile)",
+        "engineeringTitle": "Core Engineering",
+        "appsecTitle": "AppSec & Security"
+    },
+    "Projects": {
+        "title": "Leadership and Security Research",
+        "devcybsec": {
+            "role": "Founder & Lead Developer",
+            "title": "DevCybSec - Security Labs",
+            "description": "Educational platform with interactive labs to teach web vulnerabilities (OWASP Top 10) and secure coding practices. Demonstrates deep knowledge in attack and defense simulations.",
+            "cta": "View Project"
+        },
+        "minisast": {
+            "role": "Research",
+            "title": "Mini-SAST Analyzer",
+            "description": "Proof of concept of a static application security testing (SAST) analyzer capable of detecting common vulnerability patterns in Python and JavaScript source code.",
+            "cta": "View Project"
+        }
+    },
+    "Contact": {
+        "title": "Ready to build secure and scalable software?",
+        "subtitle": "Open to new opportunities where I can contribute technical and strategic value.",
+        "ctaEmail": "Email Me",
+        "ctaLinkedIn": "LinkedIn",
+        "ctaGitHub": "GitHub",
+        "footer": "© {year} Edgar Macías. Built with Next.js, Tailwind CSS & AppSec principles."
+    },
+    "ContactForm": {
+        "title": "[SECURE_TRANSMISSION]",
+        "description": "Send a secure message. All fields are required.",
+        "nameLabel": "Your Name / Alias:",
+        "emailLabel": "Your Email:",
+        "messageLabel": "Your Message:",
+        "sendButton": "> Transmit_Message",
+        "sendingText": "Sending...",
+        "successMessage": "Transmission Confirmed. Awaiting response.",
+        "errorMessage": "Transmission Failed. Please check inputs and try again."
+    }
+}

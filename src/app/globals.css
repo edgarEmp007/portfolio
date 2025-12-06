@@ -1,25 +1,42 @@
-/* 1. Importar una fuente monoespaciada */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
+@import "tailwindcss";
 
-/* 2. Definir variables de color para el tema */
 :root {
-  --background: #0a0a0a; /* Negro casi puro */
-  --terminal-bg: #0d1117;
-  --text-primary: #e6e6e6;
-  --text-secondary: #8b949e;
-  --accent-green: #39ff14; /* Verde neón */
-  --border-color: rgba(57, 255, 20, 0.2);
+  --background: #121212;
+  --foreground: #e6e6e6;
+  --accent: #00BFA5;
+  --accent-foreground: #000000;
+  --muted: #1E1E1E;
+  --muted-foreground: #8b949e;
 }
 
 body {
   background-color: var(--background);
-  color: var(--text-primary);
-  font-family: 'Fira Code', monospace; /* Aplicar la fuente a todo el cuerpo */
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-  max-width: 1200px; /* Un poco más de espacio */
-  margin: 0 auto;
-  padding: 20px;
+::selection {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-foreground);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
 }
 
