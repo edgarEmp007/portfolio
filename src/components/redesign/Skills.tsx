@@ -76,25 +76,20 @@ export default function Skills() {
                                         </div>
 
                                         <div className="flex flex-wrap gap-3">
-                                            {[0, 1, 2, 3, 4, 5, 6].map((idx) => {
-                                                // We try to access up to 7 items, but check if they exist
-                                                // This is a dynamic way to render translations array without knowing strict length
-                                                // In a real optimized scenario we might use rich text chunks, but this works for array simulation
-                                                try {
-                                                    const skill = t(`categories.${activeTab}.items.${idx}`);
-                                                    if (skill?.includes('categories.')) return null; // fallback check
-                                                    return (
-                                                        <span
-                                                            key={idx}
-                                                            className="px-4 py-2 bg-zinc-800/50 border border-zinc-700 text-gray-200 rounded-lg text-base font-medium hover:border-[var(--accent)]/50 hover:text-[var(--accent)] transition-colors cursor-default"
-                                                        >
-                                                            {skill}
-                                                        </span>
-                                                    )
-                                                } catch (e) {
-                                                    return null;
-                                                }
-                                            })}
+                                            {(() => {
+                                                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                                                const subItems = t.raw(`categories.${activeTab}.items`) as any;
+                                                const skills = Array.isArray(subItems) ? subItems : [];
+
+                                                return skills.map((skill: string, idx: number) => (
+                                                    <span
+                                                        key={idx}
+                                                        className="px-4 py-2 bg-zinc-800/50 border border-zinc-700 text-gray-200 rounded-lg text-base font-medium hover:border-[var(--accent)]/50 hover:text-[var(--accent)] transition-colors cursor-default"
+                                                    >
+                                                        {skill}
+                                                    </span>
+                                                ));
+                                            })()}
                                         </div>
                                     </div>
                                 </motion.div>
