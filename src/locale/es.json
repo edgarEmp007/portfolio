@@ -21,34 +21,93 @@
         }
     },
     "Journey": {
-        "title": "Mi Trayectoria: The Journey",
+        "title": "Mi Trayectoria: De la Academia a la Seguridad Aplicada",
         "milestones": [
             {
                 "year": "2015",
-                "title": "Ingeniería en Computación",
-                "description": "Inicio de formación académica en la UNAM, Facultad de Ingeniería."
+                "title": "Ingeniería de Software & Arquitectura Legacy",
+                "focus": "Inicio de Carrera",
+                "description": "Diseño e implementación de motor de reglas para procesos críticos (titulación/trámites), asegurando 100% de precisión en emisión de documentos.",
+                "tech_stack": "PHP, PHPUnit, Symfony, AngularJS"
             },
             {
-                "year": "2018",
-                "title": "Full-Stack Developer @ UNAM",
-                "description": "Desarrollo de sistemas críticos y migración de tecnologías legacy."
+                "year": "2019",
+                "title": "Modernización y Escala de Sistemas Críticos",
+                "focus": "Gestión de Complejidad",
+                "description": "Dockerización y refactorización de sistemas obsoletos para asegurar continuidad. Manejo de tráfico de alta concurrencia en inscripciones de idiomas.",
+                "tech_stack": "PostgreSQL, Python, Docker, Next.js, NestJS"
+            },
+            {
+                "year": "2020",
+                "title": "Desarrollo Móvil Full-Stack (Freelance)",
+                "focus": "Expansión Técnica",
+                "description": "Diseño, desarrollo e implementación de una aplicación de taxis. Gestión integral desde el backend en la nube hasta la app móvil.",
+                "tech_stack": "Flutter (Dart), Base de Datos Cloud, NoSQL, Google Maps API"
             },
             {
                 "year": "2021",
-                "title": "Especialización en AppSec",
-                "description": "Foco profundo en Ciberseguridad, certificaciones y desarrollo seguro."
+                "title": "Migraciones de Datos y Herramientas Custom",
+                "focus": "Profundidad Técnica",
+                "description": "Migración crítica de SQL Server a PostgreSQL. Desarrollo de herramienta custom en PHP para parsing y aseguramiento de integridad de millones de registros.",
+                "tech_stack": "PostgreSQL, Python, ETL Custom, SQL Server"
             },
             {
-                "year": "2024",
-                "title": "Lanzamiento de DevCybSec",
-                "description": "Plataforma educativa para desarrolladores enfocada en seguridad."
+                "year": "2023",
+                "title": "Liderazgo Técnico y Seguridad por Diseño",
+                "focus": "Transición a Seniority",
+                "description": "Liderazgo de equipo Scrum e implementación de sistema de atención psicológica con criptografía robusta (Security by Design) para confidencialidad.",
+                "tech_stack": "Criptografía, Scrum, AppSec, Node.js"
+            },
+            {
+                "year": "2025",
+                "title": "Especialización y Proyectos Activos",
+                "focus": "Crecimiento Continuo",
+                "description": "Lanzamiento de DevCybSec con laboratorios interactivos (OWASP Top 10) y creación de mini-SAST como prueba de concepto de seguridad.",
+                "tech_stack": "Go (Golang), Vite, Express, AppSec Labs"
             }
         ]
     },
     "Skills": {
         "title": "Habilidades (T-Shaped Profile)",
-        "engineeringTitle": "Core Engineering",
-        "appsecTitle": "AppSec & Security"
+        "categories": {
+            "backend": {
+                "title": "Backend & Core",
+                "items": [
+                    "Go (Golang)",
+                    "Python",
+                    "PHP",
+                    "NestJS",
+                    "Express"
+                ]
+            },
+            "frontend": {
+                "title": "Frontend & Mobile",
+                "items": [
+                    "Next.js",
+                    "Flutter (Dart)",
+                    "AngularJS",
+                    "Vite"
+                ]
+            },
+            "data": {
+                "title": "Bases de Datos & Cloud",
+                "items": [
+                    "PostgreSQL",
+                    "SQL Server",
+                    "Cloud Firebase (NoSQL)"
+                ]
+            },
+            "security": {
+                "title": "DevOps & AppSec",
+                "items": [
+                    "Docker",
+                    "Express Gateway",
+                    "Criptografía",
+                    "OWASP Top 10",
+                    "Mini-SAST"
+                ]
+            }
+        }
     },
     "Projects": {
         "title": "Liderazgo e Investigación en Seguridad",
