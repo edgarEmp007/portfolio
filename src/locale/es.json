@@ -27,42 +27,66 @@
                 "year": "2015",
                 "title": "Ingeniería de Software & Arquitectura Legacy",
                 "focus": "Inicio de Carrera",
-                "description": "Diseño e implementación de motor de reglas para procesos críticos (titulación/trámites), asegurando 100% de precisión en emisión de documentos.",
+                "description": [
+                    "Diseñé e implementé motor de reglas para procesos críticos de titulación.",
+                    "Aseguré 100% de precisión en la emisión de documentos oficiales.",
+                    "Optimicé flujos de trabajo utilizando Symfony y AngularJS."
+                ],
                 "tech_stack": "PHP, PHPUnit, Symfony, AngularJS"
             },
             {
                 "year": "2019",
                 "title": "Modernización y Escala de Sistemas Críticos",
                 "focus": "Gestión de Complejidad",
-                "description": "Dockerización y refactorización de sistemas obsoletos para asegurar continuidad. Manejo de tráfico de alta concurrencia en inscripciones de idiomas.",
+                "description": [
+                    "Dockericé sistemas legacy para asegurar continuidad operativa.",
+                    "Refactoricé código obsoleto reduciendo significativamente la deuda técnica.",
+                    "Gestioné tráfico de alta concurrencia durante periodos de inscripción."
+                ],
                 "tech_stack": "PostgreSQL, Python, Docker, Next.js, NestJS"
             },
             {
                 "year": "2020",
                 "title": "Desarrollo Móvil Full-Stack (Freelance)",
                 "focus": "Expansión Técnica",
-                "description": "Diseño, desarrollo e implementación de una aplicación de taxis. Gestión integral desde el backend en la nube hasta la app móvil.",
+                "description": [
+                    "Desarrollé aplicación móvil completa para servicio de taxis.",
+                    "Integré backend en la nube con Google Maps API y geolocalización.",
+                    "Lideré el ciclo completo desde diseño de arquitectura hasta despliegue."
+                ],
                 "tech_stack": "Flutter (Dart), Base de Datos Cloud, NoSQL, Google Maps API"
             },
             {
                 "year": "2021",
                 "title": "Migraciones de Datos y Herramientas Custom",
                 "focus": "Profundidad Técnica",
-                "description": "Migración crítica de SQL Server a PostgreSQL. Desarrollo de herramienta custom en PHP para parsing y aseguramiento de integridad de millones de registros.",
+                "description": [
+                    "Migré base de datos crítica de SQL Server a PostgreSQL sin pérdida de datos.",
+                    "Desarrollé ETL personalizado en PHP para asegurar la integridad de registros.",
+                    "Automaticé la validación y limpieza de millones de registros académicos."
+                ],
                 "tech_stack": "PostgreSQL, Python, ETL Custom, SQL Server"
             },
             {
                 "year": "2023",
                 "title": "Liderazgo Técnico y Seguridad por Diseño",
                 "focus": "Transición a Seniority",
-                "description": "Liderazgo de equipo Scrum e implementación de sistema de atención psicológica con criptografía robusta (Security by Design) para confidencialidad.",
+                "description": [
+                    "Lideré equipo Scrum en el desarrollo de sistema de atención psicológica.",
+                    "Implementé criptografía robusta para garantizar la confidencialidad de datos sensibles.",
+                    "Apliqué principios de 'Security by Design' en toda la arquitectura del sistema."
+                ],
                 "tech_stack": "Criptografía, Scrum, AppSec, Node.js"
             },
             {
                 "year": "2025",
                 "title": "Especialización y Proyectos Activos",
                 "focus": "Crecimiento Continuo",
-                "description": "Lanzamiento de DevCybSec con laboratorios interactivos (OWASP Top 10) y creación de mini-SAST como prueba de concepto de seguridad.",
+                "description": [
+                    "Fundé DevCybSec con laboratorios interactivos sobre OWASP Top 10.",
+                    "Desarrollé Mini-SAST analyzer como prueba de concepto de seguridad automatizada.",
+                    "Investigo activamente nuevas vulnerabilidades y estrategias de defensa."
+                ],
                 "tech_stack": "Go (Golang), Vite, Express, AppSec Labs"
             }
         ]
@@ -110,17 +134,17 @@
         }
     },
     "Projects": {
-        "title": "Liderazgo e Investigación en Seguridad",
+        "title": "DevCybSec: Mi Compromiso con el Desarrollo Seguro",
         "devcybsec": {
             "role": "Fundador & Lead Developer",
             "title": "DevCybSec - Laboratorios de Seguridad",
-            "description": "Plataforma educativa con laboratorios interactivos para enseñar vulnerabilidades web (OWASP Top 10) y prácticas de codificación segura. Demuestra conocimiento profundo en simulaciones de ataques y defensas.",
+            "description": "Investigación aplicada en seguridad ofensiva y defensiva. Plataforma de laboratorios interactivos (OWASP Top 10) para entrenamiento avanzado en AppSec y codificación segura.",
             "cta": "Ver Proyecto"
         },
         "minisast": {
             "role": "Investigación",
             "title": "Mini-SAST Analyzer",
-            "description": "Prueba de concepto de un analizador estático de seguridad (SAST) capaz de detectar patrones de vulnerabilidades comunes en código fuente Python y JavaScript.",
+            "description": "Desarrollo de motor de análisis estático (SAST) para detección automatizada de vulnerabilidades en código fuente. Prueba de concepto de ingeniería de seguridad aplicada.",
             "cta": "Ver Proyecto"
         }
     },

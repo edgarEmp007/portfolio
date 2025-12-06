@@ -6,6 +6,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing, type Locale } from '@/i18n/routing';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import FloatingContactButton from '@/components/FloatingContactButton';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -38,6 +39,7 @@ export default async function RootLayout({
       <body className={`${inter.variable} min-h-screen bg-[var(--background)] text-[var(--foreground)] antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <LanguageSwitcher />
+          <FloatingContactButton />
           {children}
         </NextIntlClientProvider>
       </body>

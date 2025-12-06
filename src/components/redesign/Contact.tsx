@@ -15,7 +15,7 @@ export default function Contact() {
     const year = new Date().getFullYear();
 
     return (
-        <section className="py-24 bg-[var(--muted)]/30 border-t border-zinc-900">
+        <section id="contact" className="py-24 bg-[var(--muted)]/30 border-t border-zinc-900">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

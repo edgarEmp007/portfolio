@@ -36,10 +36,19 @@ export default function Hero() {
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                             <Link
-                                href="https://github.com/edgar-macias-se"
+                                href="/cv.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-black bg-[var(--accent)] hover:bg-opacity-90 transition-colors duration-300"
+                            >
+                                <Download className="w-5 h-5 mr-2" />
+                                {t('ctaCV')}
+                            </Link>
+                            <Link
+                                href="https://github.com/edgar-macias-se"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center px-6 py-3 border border-gray-600 text-base font-medium rounded-md text-white bg-transparent hover:bg-gray-800 transition-colors duration-300"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -55,15 +64,6 @@ export default function Hero() {
                                     <path d="M9 18c-4.51 2-5-2-7-2" />
                                 </svg>
                                 {t('ctaCode')}
-                            </Link>
-                            <Link
-                                href="/cv.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center px-6 py-3 border border-gray-600 text-base font-medium rounded-md text-white bg-transparent hover:bg-gray-800 transition-colors duration-300"
-                            >
-                                <Download className="w-5 h-5 mr-2" />
-                                {t('ctaCV')}
                             </Link>
                         </div>
                     </motion.div>

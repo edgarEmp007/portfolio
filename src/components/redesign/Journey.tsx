@@ -92,9 +92,28 @@ export default function Journey() {
                                                 <div className="text-sm font-semibold text-gray-300 mb-3 uppercase tracking-wider">
                                                     {t(`milestones.${index}.focus`)}
                                                 </div>
-                                                <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                                                    {t(`milestones.${index}.description`)}
-                                                </p>
+
+                                                {/* Description: Handle String vs Array */}
+                                                {(() => {
+                                                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                                                    const description = t.raw(`milestones.${index}.description`) as any;
+
+                                                    if (Array.isArray(description)) {
+                                                        return (
+                                                            <ul className="list-disc list-inside text-gray-400 text-sm leading-relaxed mb-4 space-y-1">
+                                                                {description.map((point: string, i: number) => (
+                                                                    <li key={i}>{point}</li>
+                                                                ))}
+                                                            </ul>
+                                                        );
+                                                    }
+
+                                                    return (
+                                                        <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                                                            {t(`milestones.${index}.description`)}
+                                                        </p>
+                                                    );
+                                                })()}
 
                                                 {/* Tech Stack Tags */}
                                                 <div className={`flex flex-wrap gap-2 ${index % 2 === 0 ? "md:justify-end" : "md:justify-start"}`}>
