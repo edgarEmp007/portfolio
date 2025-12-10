@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Lock, Search, LockKeyhole } from "lucide-react";
+import { ExternalLink, Lock, Search, LockKeyhole, Glasses } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from 'next-intl';
 
@@ -30,6 +30,13 @@ export default function Projects() {
             icon: LockKeyhole,
             featured: false,
         },
+        {
+            key: 'leetcode',
+            link: "https://github.com/edgar-macias-se/leetcode_road",
+            tech: ["LeetCode", "Algorithms", "Data Structures", "Competitive Programming"],
+            icon: Glasses,
+            featured: false,
+        }
     ];
 
     return (

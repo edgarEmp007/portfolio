@@ -152,6 +152,12 @@
             "title": "Go Hexagonal Auth",
             "description": "Development of a hexagonal architecture for authentication and authorization.",
             "cta": "View Project"
+        },
+        "leetcode": {
+            "role": "Competitive Programming",
+            "title": "LeetCode Road",
+            "description": "Competitive programming journey on LeetCode.",
+            "cta": "View Project"
         }
     },
     "Contact": {
