@@ -146,6 +146,12 @@
             "title": "Mini-SAST Analyzer",
             "description": "Desarrollo de motor de análisis estático (SAST) para detección automatizada de vulnerabilidades en código fuente. Prueba de concepto de ingeniería de seguridad aplicada.",
             "cta": "Ver Proyecto"
+        },
+        "hexagonalauth": {
+            "role": "Investigación",
+            "title": "Go Hexagonal Auth",
+            "description": "Desarrollo de una arquitectura hexagonal para autenticación y autorización.",
+            "cta": "Ver Proyecto"
         }
     },
     "Contact": {

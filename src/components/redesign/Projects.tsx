@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Lock, Search } from "lucide-react";
+import { ExternalLink, Lock, Search, LockKeyhole } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from 'next-intl';
 
@@ -18,9 +18,16 @@ export default function Projects() {
         },
         {
             key: 'minisast',
-            link: "https://github.com/edgarEmp007",
+            link: "https://github.com/DevCybSec/mini-sast",
             tech: ["Python", "AST Parsing", "Security Rules"],
             icon: Search,
+            featured: false,
+        },
+        {
+            key: 'hexagonalauth',
+            link: "https://github.com/edgar-macias-se/go-hexagonal-auth",
+            tech: ["Go", "Gorm", "JWT", "Gin", "Hexagonal Architecture", "Docker"],
+            icon: LockKeyhole,
             featured: false,
         },
     ];

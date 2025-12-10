@@ -146,6 +146,12 @@
             "title": "Mini-SAST Analyzer",
             "description": "Development of a static analysis engine (SAST) for automated vulnerability detection in source code. Proof of concept for applied security engineering.",
             "cta": "View Project"
+        },
+        "hexagonalauth": {
+            "role": "Research",
+            "title": "Go Hexagonal Auth",
+            "description": "Development of a hexagonal architecture for authentication and authorization.",
+            "cta": "View Project"
         }
     },
     "Contact": {
