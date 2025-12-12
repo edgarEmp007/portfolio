@@ -160,6 +160,9 @@
             "cta": "View Project"
         }
     },
+    "BitbucketActivity": {
+        "title": "Activity"
+    },
     "Contact": {
         "title": "Ready to build secure and scalable software?",
         "subtitle": "Open to new opportunities where I can contribute technical and strategic value.",

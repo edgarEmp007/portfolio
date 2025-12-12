@@ -12,7 +12,7 @@ type Contribution = {
 type ContributionGraphProps = {
   contributions: Contribution[];
   viewMode: 'normal' | 'fullscreen';
-  onClose: () => void; // Función para cerrar la vista fullscreen desde el padre
+  onClose?: () => void; // Función para cerrar la vista fullscreen desde el padre
 };
 
 // --- FUNCIONES AUXILIARES (HELPERS) ---
@@ -37,14 +37,14 @@ const getAnimationForCount = (count: number): string | null => {
 };
 
 /**
- * Devuelve un código de color azul según el número de contribuciones.
- * Similar a la escala de GitHub, pero en tonos azules.
+ * Devuelve un código de color teal según el número de contribuciones.
+ * Escala basada en el color de acento #00BFA5.
  */
 const getColorForCount = (count: number): string => {
-  if (count >= 1 && count <= 2) return '#013a63'; // Azul muy oscuro
-  if (count >= 3 && count <= 8) return '#01497c'; // Azul oscuro
-  if (count >= 9 && count <= 15) return '#2a6f97'; // Azul medio
-  if (count > 15) return '#61a5c2'; // Azul claro
+  if (count >= 1 && count <= 2) return '#004d40'; // Teal muy oscuro
+  if (count >= 3 && count <= 8) return '#00695c'; // Teal oscuro
+  if (count >= 9 && count <= 15) return '#00897b'; // Teal medio
+  if (count > 15) return '#00BFA5'; // Teal brillante (Accent)
   return '#2d333b'; // Color base para días sin contribuciones (gris oscuro)
 };
 

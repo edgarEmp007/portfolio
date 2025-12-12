@@ -157,8 +157,11 @@
             "role": "Competitive Programming",
             "title": "LeetCode Road",
             "description": "Competitive programming journey on LeetCode.",
-            "cta": "View Project"
+            "cta": "Ver Proyecto"
         }
+    },
+    "BitbucketActivity": {
+        "title": "Actividad"
     },
     "Contact": {
         "title": "¿Listo para construir software seguro y escalable?",

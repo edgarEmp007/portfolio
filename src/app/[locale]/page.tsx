@@ -4,6 +4,7 @@ import Journey from "@/components/redesign/Journey";
 import Skills from "@/components/redesign/Skills";
 import Projects from "@/components/redesign/Projects";
 import Contact from "@/components/redesign/Contact";
+import BitbucketActivity from "@/components/BitbucketActivity";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Journey />
       <Skills />
       <Projects />
+      <BitbucketActivity />
       <Contact />
     </main>
   );
