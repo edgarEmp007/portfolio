@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function Hero() {
     const t = useTranslations('Hero');
+    const locale = useLocale();
 
     return (
         <section className="min-h-screen flex flex-col justify-center items-center pt-20 pb-16">
@@ -36,7 +37,7 @@ export default function Hero() {
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                             <Link
-                                href="/cv.pdf"
+                                href={`/resume/${locale}.pdf`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-black bg-[var(--accent)] hover:bg-opacity-90 transition-colors duration-300"
