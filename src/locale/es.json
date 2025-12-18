@@ -141,6 +141,12 @@
             "description": "Investigación aplicada en seguridad ofensiva y defensiva. Plataforma de laboratorios interactivos (OWASP Top 10) para entrenamiento avanzado en AppSec y codificación segura.",
             "cta": "Ver Proyecto"
         },
+        "fullstack-lab-showcase": {
+            "role": "Investigación",
+            "title": "Full-Stack Lab Showcase",
+            "description": "Desarrollo de laboratorios interactivos para entrenamiento avanzado en AppSec y codificación segura.",
+            "cta": "Ver Proyecto"
+        },
         "minisast": {
             "role": "Investigación",
             "title": "Mini-SAST Analyzer",

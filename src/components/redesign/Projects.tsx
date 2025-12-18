@@ -17,6 +17,13 @@ export default function Projects() {
             featured: true,
         },
         {
+            key: 'fullstack-lab-showcase',
+            link: "https://github.com/edgar-macias-se/go-vite-lab-showcase",
+            tech: ["Golang", "Vite", "PostgreSQL", "Docker"],
+            icon: Lock,
+            featured: false,
+        },
+        {
             key: 'minisast',
             link: "https://github.com/DevCybSec/mini-sast",
             tech: ["Python", "AST Parsing", "Security Rules"],

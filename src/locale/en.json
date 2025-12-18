@@ -141,6 +141,12 @@
             "description": "Applied research in offensive and defensive security. Interactive labs platform (OWASP Top 10) for advanced AppSec training and secure coding.",
             "cta": "View Project"
         },
+        "fullstack-lab-showcase": {
+            "role": "Research",
+            "title": "Full-Stack Lab Showcase",
+            "description": "Development of a full-stack lab showcase for advanced AppSec training and secure coding.",
+            "cta": "View Project"
+        },
         "minisast": {
             "role": "Research",
             "title": "Mini-SAST Analyzer",
