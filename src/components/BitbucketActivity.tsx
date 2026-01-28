@@ -1,24 +1,9 @@
 import ContributionGraph from './ContributionGraph';
 import { getTranslations } from 'next-intl/server';
+import bitbucketStats from '@/data/bitbucket-stats.json';
 
 async function getBitbucketContributions() {
-    try {
-        const res = await fetch('https://bitbucket-stats.vercel.app/api/bitbucket_stats', {
-            cache: 'no-store',
-            next: { revalidate: 3600 } // Revalidate every hour
-        });
-
-        if (!res.ok) {
-            console.error('Failed to fetch bitbucket stats:', res.statusText);
-            return [];
-        }
-
-        return res.json();
-
-    } catch (error) {
-        console.error('Error fetching contributions:', error);
-        return [];
-    }
+    return bitbucketStats;
 }
 
 export default async function BitbucketActivity() {
