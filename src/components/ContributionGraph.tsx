@@ -53,13 +53,13 @@ const getColorForCount = (count: number): string => {
 const ContributionGraph = ({ contributions, viewMode, onClose }: ContributionGraphProps) => {
   // --- PREPARACIÓN DE DATOS ---
 
-  // 1. Generar la lista de todos los días de los últimos 6 meses (183 días).
-  const today = new Date();
-  const days = Array.from({ length: 183 }).map((_, i) => {
-    const date = new Date(today);
-    date.setDate(today.getDate() - i);
+  // 1. Generar la lista de todos los días de junio a diciembre 2025 (214 días).
+  const startDate = new Date('2025-06-01T00:00:00Z');
+  const days = Array.from({ length: 214 }).map((_, i) => {
+    const date = new Date(startDate);
+    date.setUTCDate(startDate.getUTCDate() + i);
     return date;
-  }).reverse(); // Ordenar de más antiguo a más reciente.
+  });
 
   // 2. Crear un mapa para buscar contribuciones de forma eficiente (O(1) lookup).
   const contributionsMap = new Map<string, number>();
