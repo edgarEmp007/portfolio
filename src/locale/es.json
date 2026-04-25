@@ -1,9 +1,9 @@
 {
     "Hero": {
         "title": "Edgar Macías",
-        "role": "Software Engineer Senior | Full-Stack Developer",
-        "specialty": "Especialista en Desarrollo Seguro (AppSec) y Escalabilidad",
-        "description": "7+ años de experiencia construyendo y optimizando sistemas de alto impacto (UNAM), aplicando un enfoque 'Security by Design' para mitigar riesgos en el ciclo de desarrollo.",
+        "role": "Senior Backend Engineer | Distributed Systems & AI-First Architecture",
+        "specialty": "Especialista en Arquitectura Cloud-Native, Escalabilidad y Security-by-Design",
+        "description": "8+ años de experiencia diseñando y optimizando sistemas distribuidos de alto impacto. Enfocado en construir motores de procesamiento de datos escalables, arquitecturas orientadas a eventos y soluciones AI-First, garantizando performance y robustez.",
         "ctaCode": "Ver Portafolio de Código",
         "ctaCV": "Descargar CV"
     },
@@ -16,12 +16,12 @@
         "achievements": {
             "users": "Desarrollo de sistemas escalables gestionando datos de más de 300,000 alumnos.",
             "migration": "Migración exitosa de bases de datos legacy con millones de registros, asegurando integridad y cero tiempo de inactividad.",
-            "security": "Implementación de prácticas de AppSec y 'Security by Design' reduciendo vulnerabilidades en un 40%.",
+            "security": "Implementación de arquitecturas Security-by-Design y automatización SAST/DAST en pipelines CI/CD, asegurando fiabilidad a escala.",
             "optimization": "Optimización de procesos administrativos, reduciendo tiempos de respuesta en un 60%."
         }
     },
     "Journey": {
-        "title": "Mi Trayectoria: De la Academia a la Seguridad Aplicada",
+        "title": "Mi Trayectoria: De la Academia a la Arquitectura Cloud-Native",
         "milestones": [
             {
                 "year": "2015",
@@ -69,25 +69,25 @@
             },
             {
                 "year": "2023",
-                "title": "Liderazgo Técnico y Seguridad por Diseño",
+                "title": "Liderazgo Técnico y Sistemas Distribuidos",
                 "focus": "Transición a Seniority",
                 "description": [
-                    "Lideré equipo Scrum en el desarrollo de sistema de atención psicológica.",
-                    "Implementé criptografía robusta para garantizar la confidencialidad de datos sensibles.",
-                    "Apliqué principios de 'Security by Design' en toda la arquitectura del sistema."
+                    "Lideré equipos ágiles en el desarrollo de plataformas orientadas a microservicios.",
+                    "Diseñé arquitecturas escalables asegurando alta disponibilidad y consistencia de datos.",
+                    "Integré principios de Security-by-Design y observabilidad avanzada en todo el stack."
                 ],
-                "tech_stack": "Criptografía, Scrum, AppSec, Node.js"
+                "tech_stack": "Node.js, Go, Microservicios, Observabilidad"
             },
             {
                 "year": "2025",
-                "title": "Especialización y Proyectos Activos",
+                "title": "Arquitectura AI-First & Procesamiento de Datos",
                 "focus": "Crecimiento Continuo",
                 "description": [
-                    "Fundé DevCybSec con laboratorios interactivos sobre OWASP Top 10.",
-                    "Desarrollé Mini-SAST analyzer como prueba de concepto de seguridad automatizada.",
-                    "Investigo activamente nuevas vulnerabilidades y estrategias de defensa."
+                    "Diseño y desarrollo de motores de procesamiento de datos en tiempo real.",
+                    "Implementación de Automated Data Analysis Engines con Go para alta concurrencia.",
+                    "Investigación e integración de IA aplicada a productos (RAG/LLMs) en entornos Cloud."
                 ],
-                "tech_stack": "Go (Golang), Vite, Express, AppSec Labs"
+                "tech_stack": "Go (Golang), AWS, AI-First Architecture, Next.js"
             }
         ]
     },
@@ -122,35 +122,35 @@
                 ]
             },
             "security": {
-                "title": "DevOps & AppSec",
+                "title": "Cloud Architecture & SecOps",
                 "items": [
-                    "Docker",
-                    "Express Gateway",
-                    "Criptografía",
-                    "OWASP Top 10",
-                    "Mini-SAST"
+                    "Docker & CI/CD",
+                    "Event-Driven Architecture",
+                    "Observabilidad",
+                    "Security-by-Design",
+                    "SAST/DAST Automation"
                 ]
             }
         }
     },
     "Projects": {
-        "title": "DevCybSec: Mi Compromiso con el Desarrollo Seguro",
+        "title": "Proyectos Destacados: Arquitectura y Escalabilidad",
         "devcybsec": {
             "role": "Fundador & Lead Developer",
-            "title": "DevCybSec - Laboratorios de Seguridad",
-            "description": "Investigación aplicada en seguridad ofensiva y defensiva. Plataforma de laboratorios interactivos (OWASP Top 10) para entrenamiento avanzado en AppSec y codificación segura.",
+            "title": "DevCybSec - Automated System Design",
+            "description": "Organización enfocada en el procesamiento robusto de datos, análisis automatizado y diseño de sistemas seguros para infraestructuras cloud-native.",
             "cta": "Ver Proyecto"
         },
         "fullstack-lab-showcase": {
-            "role": "Investigación",
-            "title": "Full-Stack Lab Showcase",
-            "description": "Desarrollo de laboratorios interactivos para entrenamiento avanzado en AppSec y codificación segura.",
+            "role": "Arquitectura",
+            "title": "Micro-frontend & Go Backend Architecture",
+            "description": "Arquitectura distribuida demostrando el manejo de alta concurrencia, consistencia de datos con PostgreSQL y micro-frontends.",
             "cta": "Ver Proyecto"
         },
         "minisast": {
-            "role": "Investigación",
-            "title": "Mini-SAST Analyzer",
-            "description": "Desarrollo de motor de análisis estático (SAST) para detección automatizada de vulnerabilidades en código fuente. Prueba de concepto de ingeniería de seguridad aplicada.",
+            "role": "Ingeniería de Performance",
+            "title": "Automated Data Analysis Engine",
+            "description": "Motor de análisis de código fuente construido con Go, optimizado para alto rendimiento, baja latencia y parsing de estructuras de datos complejas.",
             "cta": "Ver Proyecto"
         },
         "hexagonalauth": {

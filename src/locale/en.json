@@ -1,9 +1,9 @@
 {
     "Hero": {
         "title": "Edgar Macías",
-        "role": "Senior Software Engineer | Full-Stack Developer",
-        "specialty": "Specialist in Secure Development (AppSec) and Scalability",
-        "description": "7+ years of experience building and optimizing high-impact systems (UNAM), applying a 'Security by Design' approach to mitigate risks in the development lifecycle.",
+        "role": "Senior Backend Engineer | Distributed Systems & AI-First Architecture",
+        "specialty": "Specialist in Cloud-Native Architecture, Scalability and Security-by-Design",
+        "description": "8+ years of experience designing and optimizing high-impact distributed systems. Focused on building scalable data processing engines, event-driven architectures, and AI-First solutions, ensuring performance and robustness.",
         "ctaCode": "View Code Portfolio",
         "ctaCV": "Download CV"
     },
@@ -16,12 +16,12 @@
         "achievements": {
             "users": "Development of scalable systems managing data for over 300,000 students.",
             "migration": "Successful migration of legacy databases with millions of records, ensuring integrity and zero downtime.",
-            "security": "Implementation of AppSec and 'Security by Design' practices reducing vulnerabilities by 40%.",
+            "security": "Implementation of Security-by-Design architectures and SAST/DAST automation in CI/CD pipelines, ensuring reliability at scale.",
             "optimization": "Optimization of administrative processes, reducing response times by 60%."
         }
     },
     "Journey": {
-        "title": "The Journey: From Academia to Applied Security",
+        "title": "The Journey: From Academia to Cloud-Native Architecture",
         "milestones": [
             {
                 "year": "2015",
@@ -69,25 +69,25 @@
             },
             {
                 "year": "2023",
-                "title": "Technical Leadership & Security by Design",
+                "title": "Technical Leadership & Distributed Systems",
                 "focus": "Transition to Seniority",
                 "description": [
-                    "Led Scrum team in developing a psychological care system.",
-                    "Implemented robust cryptography to guarantee sensitive data confidentiality.",
-                    "Applied 'Security by Design' principles throughout the system architecture."
+                    "Led agile teams in developing microservices-oriented platforms.",
+                    "Designed scalable architectures ensuring high availability and data consistency.",
+                    "Integrated Security-by-Design principles and advanced observability across the stack."
                 ],
-                "tech_stack": "Criptography, Scrum, AppSec, Node.js"
+                "tech_stack": "Node.js, Go, Microservices, Observability"
             },
             {
                 "year": "2025",
-                "title": "Specialization & Active Projects",
+                "title": "AI-First Architecture & Data Processing",
                 "focus": "Continuous Growth",
                 "description": [
-                    "Founded DevCybSec with interactive labs on OWASP Top 10.",
-                    "Developed Mini-SAST analyzer as an automated security proof of concept.",
-                    "Actively researching new vulnerabilities and defense strategies."
+                    "Design and development of real-time data processing engines.",
+                    "Implementation of Automated Data Analysis Engines with Go for high concurrency.",
+                    "Research and integration of Applied AI (RAG/LLMs) in Cloud environments."
                 ],
-                "tech_stack": "Go (Golang), Vite, Express, AppSec Labs"
+                "tech_stack": "Go (Golang), AWS, AI-First Architecture, Next.js"
             }
         ]
     },
@@ -122,35 +122,35 @@
                 ]
             },
             "security": {
-                "title": "DevOps & AppSec",
+                "title": "Cloud Architecture & SecOps",
                 "items": [
-                    "Docker",
-                    "Express Gateway",
-                    "Cryptography",
-                    "OWASP Top 10",
-                    "Mini-SAST"
+                    "Docker & CI/CD",
+                    "Event-Driven Architecture",
+                    "Observability",
+                    "Security-by-Design",
+                    "SAST/DAST Automation"
                 ]
             }
         }
     },
     "Projects": {
-        "title": "DevCybSec: My Commitment to Secure Development",
+        "title": "Featured Projects: Architecture & Scalability",
         "devcybsec": {
             "role": "Founder & Lead Developer",
-            "title": "DevCybSec - Security Labs",
-            "description": "Applied research in offensive and defensive security. Interactive labs platform (OWASP Top 10) for advanced AppSec training and secure coding.",
+            "title": "DevCybSec - Automated System Design",
+            "description": "Organization focused on robust data processing, automated analysis, and secure system design for cloud-native infrastructures.",
             "cta": "View Project"
         },
         "fullstack-lab-showcase": {
-            "role": "Research",
-            "title": "Full-Stack Lab Showcase",
-            "description": "Development of a full-stack lab showcase for advanced AppSec training and secure coding.",
+            "role": "Architecture",
+            "title": "Micro-frontend & Go Backend Architecture",
+            "description": "Distributed architecture showcasing high-concurrency handling, data consistency with PostgreSQL, and micro-frontends.",
             "cta": "View Project"
         },
         "minisast": {
-            "role": "Research",
-            "title": "Mini-SAST Analyzer",
-            "description": "Development of a static analysis engine (SAST) for automated vulnerability detection in source code. Proof of concept for applied security engineering.",
+            "role": "Performance Engineering",
+            "title": "Automated Data Analysis Engine",
+            "description": "Source code analysis engine built with Go, optimized for high performance, low latency, and complex data structure parsing.",
             "cta": "View Project"
         },
         "hexagonalauth": {
